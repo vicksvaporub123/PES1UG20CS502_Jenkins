@@ -10,9 +10,9 @@ pipeline {
           }
 stage('Test') {
     steps {
-		sh './main/hello'
-		echo 'Test successful'
-			}
+        sh './main/hello'
+        echo 'Test successful'
+            }
 }
 stage ('Deploy') {
       steps {
@@ -23,6 +23,6 @@ stage ('Deploy') {
 post {
     failure {
 echo 'Pipeline failed'
-    }
-  }
+    }
+  }
 }
